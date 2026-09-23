@@ -1,0 +1,8 @@
+{
+  "name": "SKY Dental Center Kuwait — Premium Dental Care",
+  "description": "Premium dental clinic in Salmiya, Kuwait. Invisalign, dental implants, Hollywood smile veneers, and pediatric dentistry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
