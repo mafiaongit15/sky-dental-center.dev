@@ -1,3 +1,4 @@
+```yaml
 name: Deploy Vite site to GitHub Pages
 
 on:
@@ -16,7 +17,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: le-cabinet-dentaire-de-la-madeleine-—-paris (1)
+        working-directory: "le-cabinet-dentaire-de-la-madeleine-—-paris (1)"
 
     steps:
       - name: Checkout
@@ -28,7 +29,7 @@ jobs:
           node-version: 24
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Build
         run: npm run build
@@ -42,4 +43,6 @@ jobs:
           path: "le-cabinet-dentaire-de-la-madeleine-—-paris (1)/dist"
 
       - name: Deploy
+        id: deployment
         uses: actions/deploy-pages@v4
+```
